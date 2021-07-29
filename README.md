@@ -40,7 +40,8 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 :bust_in_silhouette: **Nothemba**
-- Github: [@Nothembah](https://github.com/nothembah)
+- Github: [@Nothembah](https://github.com/nothembah)<br />
+
 :bust_in_silhouette: **Hlamulo**
 - Github: [@Hlamulo-Mav](https://github.com/Hlamulo-Mav)  
 
