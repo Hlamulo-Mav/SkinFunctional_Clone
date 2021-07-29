@@ -14,7 +14,7 @@
 
 # General info
 
-A website clone of the official SkinFunctional website using DOM Manipulation
+A 2 page clone website of the official SkinFunctional website using DOM Manipulation. The clone website will only containgig the landing page and the contact page.
 
 ## Technologies
 - Html
@@ -47,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## :handshake: Contributing
 Contributions, issues and feature requests are welcome! <br />
-Feel free to check the [issues page](https://github.com/Hlamulo-Mav/Odd-or-Even-Function/issues)
+Feel free to check the [issues page](https://github.com/Hlamulo-Mav/SkinFunctional_Clone/issues)
 
 ## Show your support
 
