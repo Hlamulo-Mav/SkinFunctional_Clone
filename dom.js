@@ -3,20 +3,32 @@ export const Header = (() => {
     
     const top_contact_div = document.createElement('div');
     top_contact_div.style.display = "flex";
-    top_contact_div.style.justify-content = "space-between"; 
+    //top_contact_div.style.justify-content = "space-between"; 
 
     const ul1 = document.createElement('ul');
     const phone_num = document.createElement('li');
     const whatsapp_num = document.createElement('li');
     const email = document.createElement('li');
 
+    const phone_icon = document.createElement('a');
+    const whatsapp_icon = document.createElement('a');
+    const email_icon = document.createElement('a');
+
+    phone_icon.href = "#";
+    whatsapp_icon.href = "#";
+    email_icon.href = "#";
+
+    phone_icon.classList.add('fa fa-phone');
+    whatsapp_icon.classList.add('fa fa-whatsapp');
+    email_icon.classList.add('fa fa-envelope');
+
+    phone_num.appendChild(phone_icon);
+    whatsapp_num.appendChild(whatsapp_icon);
+    email.appendChild(email_icon);
+
     phone_num.textContent = "011 234 5678";
     whatsapp_num.textContent = "071 234 5678";
     email.textContent = "info@skinfunctional.com";
-    
-    phone_num.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-phone"></a>");
-    whatsapp_num.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-whatsapp"></a>");
-    email.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-envelope"></a>");
 
     ul1.style.display = "flex";
     phone_num.style.listStyle ="none";
@@ -34,10 +46,25 @@ export const Header = (() => {
     const instagram = document.createElement('li');
     const youtube = document.createElement('li');
 
-    facebook.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-facebook"></a>");
-    twitter.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-twitter"></a>");
-    instagram.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-instagram"></a>");
-    youtube.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-youtube"></a>");
+    const facebook_icon = document.createElement('a');
+    const twitter_icon = document.createElement('a');
+    const instagram_icon = document.createElement('a');
+    const youtube_icon = document.createElement('a');
+
+    facebook_icon.href = "#";
+    twitter_icon.href = "#";
+    instagram_icon.href = "#";
+    youtube_icon.href = "#";
+
+    facebook_icon.classList.add('fa fa-phone');
+    twitter_icon.classList.add('fa fa-whatsapp');
+    instagram_icon.classList.add('fa fa-envelope');
+    youtube_icon.classList.add('fa fa-envelope');
+
+    facebook.appendChild(facebook_icon);
+    twitter.appendChild(twitter_icon);
+    instagram.appendChild(instagram_icon);
+    youtube.appendChild(youtube_icon);
 
     ul2.style.display = "flex";
     facebook.style.listStyle ="none";
@@ -55,5 +82,6 @@ export const Header = (() => {
     top_content_div.appendChild(hr);
     
     header.appendChild(top_content_div);
-    return header;
+
+    return { header }
 })();
