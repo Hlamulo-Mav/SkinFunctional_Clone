@@ -6,11 +6,10 @@
 * [Technologies](#Technologies)
 * [Getting Started](#setup)
 * [Screenshots](#Screenshots)
-* [Authors](#Authors)
-* [Contributing](#Contributing)
-* [ Acknowledgements](#Acknowledgements)
-* [License](#License)
 * [Live-Demo](#Live-Demo)
+* [Authors](#Authors)
+* [Contributions](#Contributing)
+* [Acknowledgements](#Acknowledgements)
 
 # General info
 
@@ -45,17 +44,15 @@ To get a local copy up and running follow these simple example steps.
 :bust_in_silhouette: **Hlamulo**
 - Github: [@Hlamulo-Mav](https://github.com/Hlamulo-Mav)  
 
-## :handshake: Contributing
+## :handshake: Contributions
 Contributions, issues and feature requests are welcome! <br />
 Feel free to check the [issues page](https://github.com/Hlamulo-Mav/SkinFunctional_Clone/issues)
 
-## Show your support
-
-kindly give this repository a :star: if you like the project!
-
 ## Acknowledgements
-- Girlcode Team  
+- Girlcode Team 
+
+## Show your support
+Kindly give this repository a :star: if you like the project!
 
 ## License
-
 This project is [MIT](https://github.com/Hlamulo-Mav/SkinFunctional_Clone/blob/main/LICENSE) licensed.
