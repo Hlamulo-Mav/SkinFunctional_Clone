@@ -14,7 +14,7 @@
 
 # General info
 
-A 2 page clone website of the official SkinFunctional website using DOM Manipulation. The clone website will only containgig the landing page and the contact page.
+A 2 page clone website of the official SkinFunctional website using DOM Manipulation. The clone website will only contain the landing page and the contact page.
 
 ## Technologies
 - Html
