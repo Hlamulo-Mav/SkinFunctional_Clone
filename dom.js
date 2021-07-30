@@ -1,6 +1,9 @@
 export const Header = (() => {
+    const header = document.createElement('section');
+    
     const top_contact_div = document.createElement('div');
-    top_contact_div.display = flex;
+    top_contact_div.style.display = "flex";
+    top_contact_div.style.justify-content = "space-between"; 
 
     const ul1 = document.createElement('ul');
     const phone_num = document.createElement('li');
@@ -10,6 +13,10 @@ export const Header = (() => {
     phone_num.textContent = "011 234 5678";
     whatsapp_num.textContent = "071 234 5678";
     email.textContent = "info@skinfunctional.com";
+    
+    phone_num.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-phone"></a>");
+    whatsapp_num.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-whatsapp"></a>");
+    email.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-envelope"></a>");
 
     ul1.style.display = "flex";
     phone_num.style.listStyle ="none";
@@ -27,18 +34,26 @@ export const Header = (() => {
     const instagram = document.createElement('li');
     const youtube = document.createElement('li');
 
-    facebook.innerHTML = "";
-    twitter.innerHTML = "";
-    instagram.innerHTML = "";
-    youtube.innerHTML = "";
+    facebook.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-facebook"></a>");
+    twitter.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-twitter"></a>");
+    instagram.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-instagram"></a>");
+    youtube.insertAdjacentHTML("afterbegin", "<a href="#" class="fa fa-youtube"></a>");
 
     ul2.style.display = "flex";
     facebook.style.listStyle ="none";
     twitter.style.listStyle ="none";
     instagram.style.listStyle ="none";
-    instagram.style.listStyle ="none";
+    youtube.style.listStyle ="none";
 
-    ul2.appendChild();
-    ul2.appendChild(whatsapp_num);
-    ul2.appendChild(email);
+    ul2.appendChild(facebook);
+    ul2.appendChild(twitter);
+    ul2.appendChild(instagram);
+    ul2.appendChild(youtube);
+    top_content_div.appendChild(ul2);
+    
+    const hr = document.createElement('hr');
+    top_content_div.appendChild(hr);
+    
+    header.appendChild(top_content_div);
+    return header;
 })();
