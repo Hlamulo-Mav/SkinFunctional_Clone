@@ -1,5 +1,5 @@
-export const Header = (() => {
-    const header = document.createElement('section');
+export const Heading = (() => {
+    const navbar = document.createElement('nav');
     
     const top_contact_div = document.createElement('div');
     top_contact_div.style.display = "flex";
@@ -81,7 +81,8 @@ export const Header = (() => {
     const hr = document.createElement('hr');
     top_content_div.appendChild(hr);
     
-    header.appendChild(top_content_div);
+    navbar.appendChild(top_content_div);
 
-    return { header }
+    return { navbar } ;
+
 })();
