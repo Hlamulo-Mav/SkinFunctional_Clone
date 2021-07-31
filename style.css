@@ -1,0 +1,14 @@
+li {
+    display: inline;
+    padding: 0px 15px 0px 15px;
+    font-size: 18.5px;
+}
+
+a {
+    color: #576061;
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid #D1E0E8;
+}
