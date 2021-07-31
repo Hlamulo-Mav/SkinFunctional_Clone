@@ -16,7 +16,7 @@ div.style.justifyContent = "space-between";
 
     phone_icon.href = "#";
     whatsapp_icon.href = "#";
-    email_icon.href = "#";
+    email_icon.href = "mailto:info@crystalcear.com";
 
     phone_icon.classList.add("fa", "fa-phone");
     whatsapp_icon.classList.add("fa", "fa-whatsapp");
@@ -82,11 +82,62 @@ let hr = document.createElement('hr')
 hr.style.marginTop = "-7px"
 
 let div2 = document.createElement("div")
+div2.style.display = "flex"
+div2.style.justifyContent = "space-between"
   let logo = document.createElement("img")
   logo.src = "images/logo.jpg";
+  logo.setAttribute("id", "logo");
+
+  let pages = document.createElement("ul");
+  pages.setAttribute("id", "navbar")
+    let home = document.createElement("li")
+    let shop = document.createElement("li")
+    let featured = document.createElement("li")
+    let advice = document.createElement("li")
+    let contact = document.createElement("li")
+    let search = document.createElement("li")
+
+    let home_link = document.createElement("a")
+    let shop_link = document.createElement("a")
+    let featured_link = document.createElement("a")
+    let advice_link = document.createElement("a")
+    let contact_link = document.createElement("a")
+    let search_link = document.createElement("a")
+
+    home_link.href = "index.html"
+    shop_link.href = "#"
+    featured_link.href = "#"
+    advice_link.href = "#"
+    contact_link.href = "#"
+    search_link.href = "#"
+
+    home_link.textContent = "HOME";
+    shop_link.textContent = " SHOP";
+    featured_link.textContent = "NEW & FEATURED";
+    advice_link.textContent = " EXPERT ADVICE";
+    contact_link.textContent = "CONTACT US";
+
+    search_link.classList.add("fa", "fa-search");
+    shop_link.classList.add("fa", "fa-angle-down");
+    advice_link.classList.add("fa", "fa-angle-down");
+
+    home.appendChild(home_link);
+    shop.appendChild(shop_link);
+    featured.appendChild(featured_link);
+    advice.appendChild(advice_link);
+    contact.appendChild(contact_link);
+    search.appendChild(search_link);
+
+    pages.appendChild(home);
+    pages.appendChild(shop);
+    pages.appendChild(featured);
+    pages.appendChild(advice);
+    pages.appendChild(contact);
+    pages.appendChild(search);
+
   
   div2.appendChild(logo);
-
+  div2.appendChild(pages);
 
 container.appendChild(div);
 container.appendChild(hr)

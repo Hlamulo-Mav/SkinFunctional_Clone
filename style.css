@@ -9,6 +9,25 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: darkgrey;
+}
+
 hr {
     border-top: 1px solid #D1E0E8;
+}
+
+#navbar a {
+    font-size: 20px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #303536;
+}
+
+#logo {
+    width: 170px;
+    height: 200px;
 }
