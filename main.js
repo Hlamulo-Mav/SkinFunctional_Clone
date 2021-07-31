@@ -24,7 +24,7 @@ div.style.justifyContent = "space-between";
 
     phone_icon.textContent = "  011 234 5678";
     whatsapp_icon.textContent = "  071 234 5678";
-    email_icon.textContent = "  info@skinfunctional.com";
+    email_icon.textContent = "  info@crystalclear.com";
 
     phone_num.appendChild(phone_icon);
     whatsapp_num.appendChild(whatsapp_icon);
@@ -75,10 +75,19 @@ div.style.justifyContent = "space-between";
     socials.appendChild(instagram);
     socials.appendChild(youtube);
 
-  div.appendChild(contacts);
-  div.appendChild(socials);
+div.appendChild(contacts);
+div.appendChild(socials);
 
-  let hr = document.createElement('hr')
-  hr.style.marginTop = "-7px"
+let hr = document.createElement('hr')
+hr.style.marginTop = "-7px"
+
+let div2 = document.createElement("div")
+  let logo = document.createElement("img")
+  logo.src = "images/logo.jpg";
+  
+  div2.appendChild(logo);
+
+
 container.appendChild(div);
 container.appendChild(hr)
+container.appendChild(div2);
