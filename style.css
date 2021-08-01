@@ -21,7 +21,7 @@ hr {
     align-self: center;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    max-width: 800px;
 }
 
 #navbar a {
@@ -40,6 +40,7 @@ hr {
 }
 
 #navigation {
+    background-color: white;
     position: fixed;
     top: 0px;
 	left: 0px;
@@ -48,4 +49,14 @@ hr {
 
 #about {
     padding-top: 220px;
+}
+
+button {
+    color: white;
+    background-color: #2C2A2F;
+}
+
+button:hover {
+    color: #2C2A2F;
+    background-color: #A6DBEB;
 }
