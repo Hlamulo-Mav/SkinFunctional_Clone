@@ -144,7 +144,8 @@ div2.style.justifyContent = "space-between"
 
   let members = document.createElement('div');
     let membership = document.createElement("ul");
-    membership.style.paddingTop = "10px";
+    membership.style.paddingTop = "20px";
+    membership.style.paddingRight = "20px"
     let membershipCart = document.createElement("ul");
     membershipCart.style.marginLeft = "145px"
     membershipCart.style.paddingTop = "50px"
@@ -182,3 +183,42 @@ div2.appendChild(members);
 container.appendChild(div);
 container.appendChild(hr)
 container.appendChild(div2);
+
+//about
+let about = document.querySelector("#about");
+
+  let div3 = document.createElement("div");
+  div3.style.backgroundColor = "#4E5754";
+  div3.style.color = "white";
+  div3.style.textAlign = "center";
+  div3.style.paddingTop = "0.1px";
+  div3.style.paddingBottom = "0.1px";
+  div3.style.margin = "0px -10px 0px -10px";
+  //div3.style.fontSize = "25px";
+
+    let shipping = document.createElement("p");
+    shipping.textContent = "Free shipping for orders over R850 within South Africa. "
+      let giftCard_link = document.createElement("a");
+      giftCard_link.href = "#";
+      giftCard_link.classList.add("fa", "fa-gift");
+      giftCard_link.textContent = " Buy a gift card"
+      giftCard_link.style.color = "#89D1E8";
+    shipping.appendChild(giftCard_link);
+
+  div3.appendChild(shipping);
+
+  let div4 = document.createElement("div");
+  div4.style.backgroundImage = 'url("images/content-pixie-j1WYUNgLbOk-unsplash.jpg")';
+    let h1 = document.createElement("h1");
+    let paragraph = document.createElement("p")
+    let productButton = document.createElement("button");
+    h1.textContent = "Skincare that delivers noticeable results";
+    paragraph.textContent = "CRYSTAL CLEAR SKIN is a range of skincare products expertly formulated using optimal concentrations of effective and trusted ingredients to restore and maintain skin's ideal functioning. The brand was created to demistify skincare jargon and misinformation to deliver honourable skintelligence. Equipped with skintelligence, you can confidently adapt your skincare routine to your skin's ever-changing needs. Each product contains ingredients that have earned the right to be there, leaving no room fo redundancy."
+    productButton.textContent = "Our Products"
+  div4.appendChild(h1);
+  div4.appendChild(paragraph);
+  div4.appendChild(productButton);
+
+
+about.appendChild(div3);
+about.appendChild(div4);
