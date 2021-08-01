@@ -112,7 +112,7 @@ div2.style.justifyContent = "space-between"
     shop_link.href = "#"
     featured_link.href = "#"
     advice_link.href = "#"
-    contact_link.href = "#"
+    contact_link.href = "Contact-Us.html"
     search_link.href = "#"
 
     home_link.textContent = "HOME";
