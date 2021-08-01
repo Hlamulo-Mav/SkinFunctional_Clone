@@ -60,3 +60,17 @@ button:hover {
     color: #2C2A2F;
     background-color: #A6DBEB;
 }
+
+#shop-by img {
+    height: 300px;
+    width: 350px;
+}
+
+#shop-by figcaption {
+    color: #111112;
+    background-color: #C8C7D4;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+    margin-top: -5px;
+}

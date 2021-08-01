@@ -196,15 +196,16 @@ let about = document.querySelector("#about");
   div3.style.paddingTop = "0.1px";
   div3.style.paddingBottom = "0.1px";
   div3.style.margin = "0px -10px 0px -10px";
-  //div3.style.fontSize = "25px";
 
     let shipping = document.createElement("p");
     shipping.textContent = "Free shipping for orders over R850 within South Africa. "
+    shipping.style.fontSize = "18px";
       let giftCard_link = document.createElement("a");
       giftCard_link.href = "#";
       giftCard_link.classList.add("fa", "fa-gift");
       giftCard_link.textContent = " Buy a gift card"
       giftCard_link.style.color = "#89D1E8";
+      //giftCard_link.style.fontSize = "18px"
     shipping.appendChild(giftCard_link);
 
   div3.appendChild(shipping);
@@ -240,3 +241,54 @@ let about = document.querySelector("#about");
 
 about.appendChild(div3);
 about.appendChild(div4);
+
+//shop-by
+let shop_by = document.querySelector("#shop-by");
+let shop_div = document.createElement("div");
+shop_div.style.display = "flex";
+shop_div.style.flexWrap = "wrap";
+shop_div.style.justifyContent = "space-evenly";
+shop_div.style.paddingTop = "30px"
+shop_div.style.paddingBottom = "30px"
+
+  let div5_link = document.createElement("a");
+  let div6_link = document.createElement("a");
+  let div7_link = document.createElement("a");
+
+  div5_link.href = "#";
+  div6_link.href = "#";
+  div7_link.href = "#";
+
+  let div5 = document.createElement("figure");
+    let concern_image = document.createElement("img");
+    let concern = document.createElement("figcaption");
+    concern_image.src = "images/facemask.jpg";
+    concern.textContent = "Shop by concern";
+  div5.appendChild(concern_image);
+  div5.appendChild(concern);
+
+  let div6 = document.createElement("figure");
+    let ingredient_image = document.createElement("img");
+    let ingredient = document.createElement("figcaption");
+    ingredient_image.src = "images/jocelyn-morales-JiqTLjzEH18-unsplash.jpg";
+    ingredient.textContent = "Shop by ingredient";
+  div6.appendChild(ingredient_image);
+  div6.appendChild(ingredient);
+    
+  let div7 = document.createElement("figure");
+    let skin_type_image = document.createElement("img");
+    let skin_type = document.createElement("figcaption");
+    skin_type_image.src = "images/park-street-r3ewHpMIV94-unsplash.jpg";
+    skin_type.textContent = "Shop by skin type";
+  div7.appendChild(skin_type_image);
+  div7.appendChild(skin_type);
+
+  div5_link.appendChild(div5);
+  div6_link.appendChild(div6);
+  div7_link.appendChild(div7);
+
+shop_div.appendChild(div5_link);
+shop_div.appendChild(div6_link);
+shop_div.appendChild(div7_link);
+
+shop_by.appendChild(shop_div);
