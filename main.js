@@ -58,7 +58,7 @@ div.style.justifyContent = "space-between";
     facebook_icon.classList.add("fa", "fa-facebook");
     twitter_icon.classList.add("fa", "fa-twitter");
     instagram_icon.classList.add("fa", "fa-instagram");
-    youtube_icon.classList.add("fa", "fa-youtube");
+    youtube_icon.classList.add("fa", "fa-youtube-play");
 
     facebook.appendChild(facebook_icon);
     twitter.appendChild(twitter_icon);
@@ -88,8 +88,11 @@ div2.style.justifyContent = "space-between"
   logo.src = "images/logo.jpg";
   logo.setAttribute("id", "logo");
 
+  let allPages = document.createElement("div");
   let pages = document.createElement("ul");
-  pages.setAttribute("id", "navbar")
+  let searchPage = document.createElement("ul");
+  searchPage.style.margin = "auto"
+  allPages.setAttribute("id", "navbar")
     let home = document.createElement("li")
     let shop = document.createElement("li")
     let featured = document.createElement("li")
@@ -133,11 +136,47 @@ div2.style.justifyContent = "space-between"
     pages.appendChild(featured);
     pages.appendChild(advice);
     pages.appendChild(contact);
-    pages.appendChild(search);
+    searchPage.appendChild(search);
+
+  allPages.appendChild(pages);
+  allPages.appendChild(searchPage);
+
+  let members = document.createElement('div');
+    let membership = document.createElement("ul");
+    membership.style.paddingTop = "10px";
+    let membershipCart = document.createElement("ul");
+    membershipCart.style.marginLeft = "145px"
+    membershipCart.style.paddingTop = "50px"
+      let password = document.createElement("li");
+      let member = document.createElement("li");
+      let cart = document.createElement("li");
+
+      let password_link = document.createElement("a");
+      let member_link = document.createElement("a");
+      let cart_link = document.createElement("a");
+
+      password_link.href = "#";
+      member_link.href = "#";
+      cart_link.href = "#";
+
+      password_link.textContent = "Lost Password?"
+      member_link.classList.add("fa", "fa-user");
+      cart_link.classList.add("fa", "fa-cart-plus");
+
+      password.appendChild(password_link);
+      member.appendChild(member_link);
+      cart.appendChild(cart_link);
+
+      membership.appendChild(password);
+      membership.appendChild(member);
+      membershipCart.appendChild(cart);
+    members.appendChild(membership);
+    members.appendChild(membershipCart)
 
   
-  div2.appendChild(logo);
-  div2.appendChild(pages);
+div2.appendChild(logo);
+div2.appendChild(allPages);
+div2.appendChild(members);
 
 container.appendChild(div);
 container.appendChild(hr)

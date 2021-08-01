@@ -17,6 +17,13 @@ hr {
     border-top: 1px solid #D1E0E8;
 }
 
+#navbar {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
 #navbar a {
     font-size: 20px;
 }
@@ -29,5 +36,12 @@ hr {
 
 #logo {
     width: 170px;
-    height: 200px;
+    height: 170px;
+}
+
+#navigation {
+    position: fixed;
+    top: 0px;
+	left: 0px;
+	right: 0px;
 }
