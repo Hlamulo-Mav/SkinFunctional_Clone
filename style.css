@@ -108,3 +108,19 @@ section img {
     height: 350px;
     margin: 10px 20px;
 }
+
+#submit {
+    color: white;
+    background-color: #4E5754;
+}
+
+input[type=email], select, textarea {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+   }

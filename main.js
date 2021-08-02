@@ -3,6 +3,7 @@ import { About } from "./About.js";
 import { ShopBy } from "./ShopBy.js";
 import { NewProducts } from "./NewProducts.js";
 import { Blog } from "./Blog.js";
+import { Subscription } from "./Subscription.js";
 
 let body = document.querySelector("body");
 body.style.padding = "0";
@@ -14,3 +15,4 @@ container.appendChild(About.about);
 container.appendChild(ShopBy.shop_div);
 container.appendChild(NewProducts.new_products);
 container.appendChild(Blog.blogDiv);
+container.appendChild(Subscription.subscribe);
