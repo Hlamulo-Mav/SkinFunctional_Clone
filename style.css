@@ -51,6 +51,28 @@ hr {
     padding-top: 220px;
 }
 
+
+#map {
+    width:"400";
+    height:100%;
+    border:0;
+  }
+
+  input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+   }
+
+#flex {
+    padding-top: 220px;
+  }
+
 button {
     color: white;
     background-color: #2C2A2F;
@@ -74,3 +96,4 @@ button:hover {
     font-size: 30px;
     margin-top: -5px;
 }
+
