@@ -51,7 +51,7 @@ hr {
     padding-top: 220px;
 }
 
-<<<<<<< HEAD
+
 #map {
     width:"400";
     height:100%;
@@ -66,12 +66,13 @@ hr {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #f2f2f2;
    }
 
 #flex {
     padding-top: 220px;
   }
-=======
+
 button {
     color: white;
     background-color: #2C2A2F;
@@ -95,4 +96,4 @@ button:hover {
     font-size: 30px;
     margin-top: -5px;
 }
->>>>>>> cdf856a52e26f8dfea9da8bfee908a7d2aa23337
+

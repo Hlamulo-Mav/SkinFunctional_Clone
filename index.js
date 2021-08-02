@@ -256,6 +256,7 @@ about.appendChild(div3);
             form.append(Msg); 
             form.appendChild(br.cloneNode()); 
             form.append(s); 
+            form.style.paddingTop = "50px";
 
             document.getElementsByTagName("body")[0]
             .appendChild(form);
@@ -267,6 +268,7 @@ about.appendChild(div3);
 let flex = document.querySelector("#flex");
 
     let div5 = document.createElement("div")
+        div5.style.float = "left";
         let h1 = document.createElement("h1");
         let p1 = document.createElement("p");
         let h2 = document.createElement("h1");
