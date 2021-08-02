@@ -21,7 +21,7 @@ hr {
     align-self: center;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    max-width: 800px;
 }
 
 #navbar a {
@@ -40,6 +40,7 @@ hr {
 }
 
 #navigation {
+    background-color: white;
     position: fixed;
     top: 0px;
 	left: 0px;
@@ -50,6 +51,7 @@ hr {
     padding-top: 220px;
 }
 
+<<<<<<< HEAD
 #map {
     width:"400";
     height:100%;
@@ -69,3 +71,28 @@ hr {
 #flex {
     padding-top: 220px;
   }
+=======
+button {
+    color: white;
+    background-color: #2C2A2F;
+}
+
+button:hover {
+    color: #2C2A2F;
+    background-color: #A6DBEB;
+}
+
+#shop-by img {
+    height: 300px;
+    width: 350px;
+}
+
+#shop-by figcaption {
+    color: #111112;
+    background-color: #C8C7D4;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+    margin-top: -5px;
+}
+>>>>>>> cdf856a52e26f8dfea9da8bfee908a7d2aa23337

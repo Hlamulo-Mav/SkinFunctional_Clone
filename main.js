@@ -5,6 +5,7 @@ let div = document.createElement('div');
 div.style.marginTop = "-10px"
 div.style.display = "flex";
 div.style.justifyContent = "space-between";
+div.style.padding = "0px 20px"
 
   let contacts = document.createElement('ul');
     let phone_num = document.createElement('li');
@@ -84,7 +85,7 @@ hr.style.marginTop = "-7px"
 
 let div2 = document.createElement("div")
 div2.style.display = "flex"
-div2.style.justifyContent = "space-between"
+div2.style.justifyContent = "space-evenly"
   let logo = document.createElement("img")
   logo.src = "images/logo.jpg";
   logo.setAttribute("id", "logo");
@@ -92,6 +93,7 @@ div2.style.justifyContent = "space-between"
   let allPages = document.createElement("div");
   let pages = document.createElement("ul");
   let searchPage = document.createElement("ul");
+  pages.style.textAlign = "center"
   searchPage.style.margin = "auto"
   allPages.setAttribute("id", "navbar")
     let home = document.createElement("li")
@@ -145,7 +147,7 @@ div2.style.justifyContent = "space-between"
   let members = document.createElement('div');
     let membership = document.createElement("ul");
     membership.style.paddingTop = "20px";
-    membership.style.paddingRight = "20px"
+    //membership.style.paddingRight = "20px"
     let membershipCart = document.createElement("ul");
     membershipCart.style.marginLeft = "145px"
     membershipCart.style.paddingTop = "50px"
@@ -194,24 +196,41 @@ let about = document.querySelector("#about");
   div3.style.paddingTop = "0.1px";
   div3.style.paddingBottom = "0.1px";
   div3.style.margin = "0px -10px 0px -10px";
-  //div3.style.fontSize = "25px";
 
     let shipping = document.createElement("p");
     shipping.textContent = "Free shipping for orders over R850 within South Africa. "
+    shipping.style.fontSize = "18px";
       let giftCard_link = document.createElement("a");
       giftCard_link.href = "#";
       giftCard_link.classList.add("fa", "fa-gift");
       giftCard_link.textContent = " Buy a gift card"
       giftCard_link.style.color = "#89D1E8";
+      //giftCard_link.style.fontSize = "18px"
     shipping.appendChild(giftCard_link);
 
   div3.appendChild(shipping);
 
   let div4 = document.createElement("div");
-  div4.style.backgroundImage = 'url("images/content-pixie-j1WYUNgLbOk-unsplash.jpg")';
+  div4.style.backgroundImage = 'url("images/lanju-fotografie-r-r-sgXzbo0-unsplash.jpg")';
+  div4.style.backgroundRepeat = "no-repeat";
+  div4.style.backgroundPosition = "center";
+  div4.style.backgroundSize = "cover";
+  div4.style.padding = "80px 40px 80px 40px"
+  div4.style.margin = "0px -10px 0px -10px"
     let h1 = document.createElement("h1");
+    h1.style.width = "700px"
+    h1.style.fontSize = "70px"
+    h1.style.color = "#2C2A2F"
     let paragraph = document.createElement("p")
+    paragraph.style.fontSize = "20px"
+    paragraph.style.color = "#2C2A2F"
     let productButton = document.createElement("button");
+    productButton.style.fontSize = "20px"
+    //productButton.style.color = "white"
+    //productButton.style.backgroundColor = "#2C2A2F"
+    productButton.style.border = "none";
+    productButton.style.padding = "15px 20px";
+    productButton.style.marginTop = "30px";
     h1.textContent = "Skincare that delivers noticeable results";
     paragraph.textContent = "CRYSTAL CLEAR SKIN is a range of skincare products expertly formulated using optimal concentrations of effective and trusted ingredients to restore and maintain skin's ideal functioning. The brand was created to demistify skincare jargon and misinformation to deliver honourable skintelligence. Equipped with skintelligence, you can confidently adapt your skincare routine to your skin's ever-changing needs. Each product contains ingredients that have earned the right to be there, leaving no room fo redundancy."
     productButton.textContent = "Our Products"
@@ -222,3 +241,54 @@ let about = document.querySelector("#about");
 
 about.appendChild(div3);
 about.appendChild(div4);
+
+//shop-by
+let shop_by = document.querySelector("#shop-by");
+let shop_div = document.createElement("div");
+shop_div.style.display = "flex";
+shop_div.style.flexWrap = "wrap";
+shop_div.style.justifyContent = "space-evenly";
+shop_div.style.paddingTop = "30px"
+shop_div.style.paddingBottom = "30px"
+
+  let div5_link = document.createElement("a");
+  let div6_link = document.createElement("a");
+  let div7_link = document.createElement("a");
+
+  div5_link.href = "#";
+  div6_link.href = "#";
+  div7_link.href = "#";
+
+  let div5 = document.createElement("figure");
+    let concern_image = document.createElement("img");
+    let concern = document.createElement("figcaption");
+    concern_image.src = "images/facemask.jpg";
+    concern.textContent = "Shop by concern";
+  div5.appendChild(concern_image);
+  div5.appendChild(concern);
+
+  let div6 = document.createElement("figure");
+    let ingredient_image = document.createElement("img");
+    let ingredient = document.createElement("figcaption");
+    ingredient_image.src = "images/jocelyn-morales-JiqTLjzEH18-unsplash.jpg";
+    ingredient.textContent = "Shop by ingredient";
+  div6.appendChild(ingredient_image);
+  div6.appendChild(ingredient);
+    
+  let div7 = document.createElement("figure");
+    let skin_type_image = document.createElement("img");
+    let skin_type = document.createElement("figcaption");
+    skin_type_image.src = "images/park-street-r3ewHpMIV94-unsplash.jpg";
+    skin_type.textContent = "Shop by skin type";
+  div7.appendChild(skin_type_image);
+  div7.appendChild(skin_type);
+
+  div5_link.appendChild(div5);
+  div6_link.appendChild(div6);
+  div7_link.appendChild(div7);
+
+shop_div.appendChild(div5_link);
+shop_div.appendChild(div6_link);
+shop_div.appendChild(div7_link);
+
+shop_by.appendChild(shop_div);
