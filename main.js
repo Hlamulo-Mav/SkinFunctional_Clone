@@ -205,7 +205,6 @@ let about = document.querySelector("#about");
       giftCard_link.classList.add("fa", "fa-gift");
       giftCard_link.textContent = " Buy a gift card"
       giftCard_link.style.color = "#89D1E8";
-      //giftCard_link.style.fontSize = "18px"
     shipping.appendChild(giftCard_link);
 
   div3.appendChild(shipping);
@@ -292,3 +291,13 @@ shop_div.appendChild(div6_link);
 shop_div.appendChild(div7_link);
 
 shop_by.appendChild(shop_div);
+
+//new products
+let new_products = document.querySelector("#new-products");
+  let product_div = document.createElement("div");
+  product_div.style.backgroundColor = "#C8C7D4"
+    let h2 = document.createElement("h2");
+    h2.textContent = "New Products";
+    product_div.appendChild(h2);
+
+new_products.appendChild(product_div);
