@@ -97,3 +97,13 @@ button:hover {
     margin-top: -5px;
 }
 
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section img {
+    width: 250px;
+    height: 350px;
+    margin: 10px 20px;
+}
