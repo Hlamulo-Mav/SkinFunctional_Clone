@@ -104,9 +104,8 @@ section {
 }
 
 section img {
-    width: 250px;
-    height: 350px;
-    margin: 10px 20px;
+    width: 200px;
+    height: 300px;
 }
 
 #submit {
@@ -124,3 +123,18 @@ input[type=email], select, textarea {
     box-sizing: border-box;
     background-color: #f2f2f2;
    }
+
+section figcaption {
+    width: 200px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+section figure {
+    padding: 10px;
+}
+
+section figure:hover {
+    background-color: aliceblue;
+    transform: scale(1.1);
+}
