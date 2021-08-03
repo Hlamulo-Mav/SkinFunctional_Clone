@@ -3,7 +3,7 @@ export const NewProducts = (() => {
 let new_products = document.createElement("div");
   let product_div = document.createElement("div");
   product_div.style.backgroundColor = "#E0DFED";
-  product_div.style.margin = "0 -10px";
+  //product_div.style.margin = "0 -10px";
   product_div.style.paddingBottom = "50px";
   product_div.setAttribute("id", "products")
     let h2 = document.createElement("h2");
