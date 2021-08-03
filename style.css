@@ -60,7 +60,7 @@ hr {
   }
 
   input[type=text], select, textarea {
-    width: 40%;
+    width: 400px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -70,9 +70,10 @@ hr {
     background-color: #f2f2f2;
    }
 
-#flex {
-    padding-top: 220px;
-  }
+#cap {
+    width: 300px;
+    height: 100px;
+}
 
 button {
     color: white;
