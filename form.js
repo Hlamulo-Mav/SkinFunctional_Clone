@@ -42,7 +42,6 @@ export const form = (() => {
              //attach captcha image
              
             let image = document.createElement("div")
-            //image.style.display = "flex"
             image.style.justifyContent = "space-evenly"
             let image1 = document.createElement("img")
             image1.src = "images/captcha.png";

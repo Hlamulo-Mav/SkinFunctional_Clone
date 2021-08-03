@@ -23,6 +23,20 @@ export const Contact = (() => {
 
     div3.appendChild(shipping);
 
+    let mapp = document.createElement("div")
+        let mapps= document.createElement("iframe")
+        mapps.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14343.743488393258!2d28.127639!3d-26.002918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e092e33d711%3A0xe531e22e7b484df2!2sGallagher%20Ave%2C%20Halfway%20House%2C%20Midrand%2C%201685!5e0!3m2!1sen!2sza!4v1628030247321!5m2!1sen!2sza";
+        mapps.style.width = "100%";
+        mapps.style.height = "550px";
+        mapps.style.border = "0";
+        mapps.style.allowfullscreen = " ";
+        mapps.style.loading = "lazy";
+        mapp.appendChild(mapps);
+    
     about.appendChild(div3);
+    about.appendChild(mapp)
      return {about}
 })();
+
+
+
