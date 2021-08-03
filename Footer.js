@@ -5,6 +5,7 @@ export const Footer = (() => {
     foot.style.color = "#4E5754"
     
     let footNav = document.createElement("ul");
+    footNav.style.textAlign = "center";
       let list1 = document.createElement("li");
       let list2 = document.createElement("li");
       let list3 = document.createElement("li");

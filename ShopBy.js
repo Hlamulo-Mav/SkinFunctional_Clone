@@ -6,7 +6,7 @@ shop_div.style.display = "flex";
 shop_div.style.flexWrap = "wrap";
 shop_div.style.justifyContent = "space-evenly";
 shop_div.style.paddingTop = "30px"
-shop_div.style.paddingBottom = "30px"
+shop_div.style.paddingBottom = "0px"
 
   let div5_link = document.createElement("a");
   let div6_link = document.createElement("a");
