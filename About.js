@@ -1,6 +1,7 @@
 export const About = (() => {
     let about = document.createElement("div");
     about.setAttribute("id", "about")
+    about.style.fontFamily = "'Encode Sans', sans-serif";
 
   let div3 = document.createElement("div");
   div3.style.backgroundColor = "#4E5754";
@@ -33,6 +34,7 @@ export const About = (() => {
     h1.style.width = "700px"
     h1.style.fontSize = "70px"
     h1.style.color = "#2C2A2F"
+    h1.style.fontFamily = "'Poiret One', cursive";
     let paragraph = document.createElement("p")
     paragraph.style.fontSize = "20px"
     paragraph.style.color = "#2C2A2F"

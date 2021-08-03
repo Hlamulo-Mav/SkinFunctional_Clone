@@ -26,6 +26,8 @@ export const Blog = (() => {
         title.textContent = "Skintelligence Blog - Promoting prolonged skincare all year round"
         description.textContent = "Proper skin care is important because our skin is the largest barrier against infection that we have. Keeping our skin healthy and moist helps keep this barrier strong..."
         blog_button.textContent = "Read more";
+        description.style.fontFamily = "'Encode Sans', sans-serif";
+        blog_button.style.fontFamily = "'Encode Sans', sans-serif";
 
       skinBlog.appendChild(title);
       skinBlog.appendChild(description);

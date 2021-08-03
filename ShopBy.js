@@ -7,6 +7,7 @@ shop_div.style.flexWrap = "wrap";
 shop_div.style.justifyContent = "space-evenly";
 shop_div.style.paddingTop = "30px"
 shop_div.style.paddingBottom = "0px"
+shop_div.style.fontFamily = "'Encode Sans', sans-serif";
 
   let div5_link = document.createElement("a");
   let div6_link = document.createElement("a");

@@ -1,3 +1,4 @@
+
 li {
     display: inline;
     padding: 0px 15px 0px 15px;
@@ -97,7 +98,7 @@ button:hover {
     background-color: #C8C7D4;
     text-align: center;
     padding: 20px 0px;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: -5px;
 }
 
@@ -132,6 +133,7 @@ section figcaption {
     width: 200px;
     text-align: center;
     margin-top: 8px;
+    color: #2C2A2F;
 }
 
 section figure {

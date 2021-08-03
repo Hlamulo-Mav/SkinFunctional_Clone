@@ -120,10 +120,13 @@ div2.style.justifyContent = "space-evenly"
     search_link.href = "#"
 
     home_link.textContent = "HOME";
-    shop_link.textContent = " SHOP";
+    shop_link.textContent = " SHOP ";
     featured_link.textContent = "NEW & FEATURED";
-    advice_link.textContent = " EXPERT ADVICE";
+    advice_link.textContent = " EXPERT ADVICE ";
     contact_link.textContent = "CONTACT US";
+
+    shop.style.fontFamily = "'Encode Sans', sans-serif"
+    advice.style.fontFamily = "'Encode Sans', sans-serif"
 
     search_link.classList.add("fa", "fa-search");
     shop_link.classList.add("fa", "fa-angle-down");

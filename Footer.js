@@ -3,6 +3,7 @@ export const Footer = (() => {
     foot.style.backgroundColor = "#E0DFED";
     foot.style.padding = "60px 30px";
     foot.style.color = "#4E5754"
+    foot.style.fontFamily = "'Encode Sans', sans-serif";
     
     let footNav = document.createElement("ul");
     footNav.style.textAlign = "center";
