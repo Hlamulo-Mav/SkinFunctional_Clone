@@ -25,11 +25,11 @@ export const Footer = (() => {
       let link7 = document.createElement("a");
       let link8 = document.createElement("a");
 
-      link1.href = "#";
+      link1.href = "index.html";
       link2.href = "#";
       link3.href = "#";
       link4.href = "#";
-      link5.href = "#";
+      link5.href = "Contact-us.html";
       link6.href = "#";
       link7.href = "#";
       link8.href = "#";

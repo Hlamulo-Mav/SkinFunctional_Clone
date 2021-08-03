@@ -9,7 +9,6 @@ export const About = (() => {
   div3.style.textAlign = "center";
   div3.style.paddingTop = "0.1px";
   div3.style.paddingBottom = "0.1px";
-  //div3.style.margin = "0px -10px 0px -10px";
 
     let shipping = document.createElement("p");
     shipping.textContent = "Free shipping for orders over R850 within South Africa. "
@@ -29,7 +28,6 @@ export const About = (() => {
   div4.style.backgroundPosition = "center";
   div4.style.backgroundSize = "cover";
   div4.style.padding = "80px 40px 80px 40px"
-  //div4.style.margin = "0px -10px 0px -10px"
     let h1 = document.createElement("h1");
     h1.style.width = "700px"
     h1.style.fontSize = "70px"

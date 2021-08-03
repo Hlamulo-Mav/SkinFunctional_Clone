@@ -97,7 +97,7 @@ div2.style.justifyContent = "space-evenly"
   let searchPage = document.createElement("ul");
   pages.style.textAlign = "center"
   searchPage.style.margin = "auto"
-  allPages.setAttribute("id", "navbar")
+  allPages.setAttribute("class", "navbar")
     let home = document.createElement("li")
     let shop = document.createElement("li")
     let featured = document.createElement("li")
@@ -129,8 +129,8 @@ div2.style.justifyContent = "space-evenly"
     advice.style.fontFamily = "'Encode Sans', sans-serif"
 
     search_link.classList.add("fa", "fa-search");
-    shop_link.classList.add("fa", "fa-angle-down");
-    advice_link.classList.add("fa", "fa-angle-down");
+    shop_link.classList.add("fa", "fa-angle-down", "drop-btn");
+    advice_link.classList.add("fa", "fa-angle-down", "drop-btn");
 
     home.appendChild(home_link);
     shop.appendChild(shop_link);
@@ -139,10 +139,52 @@ div2.style.justifyContent = "space-evenly"
     contact.appendChild(contact_link);
     search.appendChild(search_link);
 
+    let shop_div = document.createElement("div");
+    shop_div.classList.add("dropdown-content");
+      let shop_by_product = document.createElement("a");
+      shop_by_product.textContent = "Shop by Product";
+      let shop_by_ingredient = document.createElement("a");
+      shop_by_ingredient.textContent = "Shop by Ingredient"
+      let shop_by_skin_type = document.createElement("a");
+      shop_by_skin_type.textContent = "Shop by Skin Type"
+      let shop_by_concern = document.createElement("a");
+      shop_by_concern.textContent = "Shop by Concern";
+    shop_div.appendChild(shop_by_product);
+    shop_div.appendChild(shop_by_ingredient);
+    shop_div.appendChild(shop_by_skin_type);
+    shop_div.appendChild(shop_by_concern);
+
+    let advice_div = document.createElement("div");
+    advice_div.classList.add("dropdown-content")
+      let skintelligence = document.createElement("a");
+      skintelligence.textContent = "Skintelligence";
+      let FAQs = document.createElement("a");
+      FAQs.textContent = "FAQs"
+      let patch_testing = document.createElement("a");
+      patch_testing.textContent = "Patch Testing"
+      let treatment = document.createElement("a");
+      treatment.textContent = "Skin Treatment Programs";
+      let questionnaire = document.createElement("a");
+      questionnaire.textContent = "Skincare Questionnaire";
+    advice_div.appendChild(skintelligence);
+    advice_div.appendChild(FAQs);
+    advice_div.appendChild(patch_testing);
+    advice_div.appendChild(treatment);
+    advice_div.appendChild(questionnaire);
+
+    let shopping = document.createElement("div");
+    shopping.classList.add("dropdown");
+    shopping.appendChild(shop);
+    shopping.appendChild(shop_div);
+    let expert_advice = document.createElement("div");
+    expert_advice.classList.add("dropdown");
+    expert_advice.appendChild(advice);
+    expert_advice.appendChild(advice_div);
+
     pages.appendChild(home);
-    pages.appendChild(shop);
+    pages.appendChild(shopping);
     pages.appendChild(featured);
-    pages.appendChild(advice);
+    pages.appendChild(expert_advice);
     pages.appendChild(contact);
     searchPage.appendChild(search);
 
@@ -186,10 +228,6 @@ div2.style.justifyContent = "space-evenly"
 div2.appendChild(logo);
 div2.appendChild(allPages);
 div2.appendChild(members);
-
-//container.appendChild(div);
-//container.appendChild(hr)
-//container.appendChild(div2);
 
 navbar.appendChild(div);
 navbar.appendChild(hr);
