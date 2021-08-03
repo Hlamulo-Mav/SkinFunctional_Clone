@@ -1,7 +1,7 @@
 export const Subscription = (() => {
     let subscribe = document.createElement("div");
     subscribe.style.backgroundColor = "#4E5754";
-    subscribe.style.padding = "20px 20px"
+    subscribe.style.padding = "30px 20px 70px 20px"
 
       let p1 = document.createElement("p");
       p1.textContent = "CRYSTAL CLEAR SKIN uses well researched and proven active ingredients at ideal doses to address common skin concerns to restore skin’s ideal functioning."
