@@ -18,8 +18,8 @@ div.style.padding = "0px 20px"
     let whatsapp_icon = document.createElement('a');
     let email_icon = document.createElement('a');
 
-    phone_icon.href = "#";
-    whatsapp_icon.href = "#";
+    phone_icon.href = "tel:0112345678";
+    whatsapp_icon.href = "https://wa.link/4xdus5";
     email_icon.href = "mailto:info@crystalcear.com";
 
     phone_icon.classList.add("fa", "fa-phone");
@@ -54,10 +54,10 @@ div.style.padding = "0px 20px"
     let instagram_icon = document.createElement('a');
     let youtube_icon = document.createElement('a');
 
-    facebook_icon.href = "#";
-    twitter_icon.href = "#";
-    instagram_icon.href = "#";
-    youtube_icon.href = "#";
+    facebook_icon.href = "https://www.facebook.com/";
+    twitter_icon.href = "https://twitter.com/";
+    instagram_icon.href = "https://instagram.com/";
+    youtube_icon.href = "https://youtube.com/";
 
     facebook_icon.classList.add("fa", "fa-facebook");
     twitter_icon.classList.add("fa", "fa-twitter");

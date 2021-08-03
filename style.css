@@ -88,6 +88,10 @@ button:hover {
     width: 350px;
 }
 
+#shop-by figure:hover {
+    opacity: 0.5;
+}
+
 #shop-by figcaption {
     color: #111112;
     background-color: #C8C7D4;
