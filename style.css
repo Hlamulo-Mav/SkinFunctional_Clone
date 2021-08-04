@@ -119,6 +119,11 @@ section img {
     background-color: #4E5754;
 }
 
+#submit:hover {
+    color: #111112;
+    background-color: #A6DBEB;
+}
+
 input[type=email], select, textarea {
     width: 40%;
     padding: 12px 20px;
