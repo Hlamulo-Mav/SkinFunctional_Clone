@@ -9,7 +9,6 @@ export const Contact = (() => {
     div3.style.textAlign = "center";
     div3.style.paddingTop = "0.1px";
     div3.style.paddingBottom = "0.1px";
-    div3.style.margin = "0px -10px 0px -10px";
 
     let shipping = document.createElement("p");
     shipping.textContent = "Free shipping for orders over R850 within South Africa. "

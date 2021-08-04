@@ -3,8 +3,10 @@ export const Footer = (() => {
     foot.style.backgroundColor = "#E0DFED";
     foot.style.padding = "60px 30px";
     foot.style.color = "#4E5754"
+    foot.style.fontFamily = "'Encode Sans', sans-serif";
     
     let footNav = document.createElement("ul");
+    footNav.style.textAlign = "center";
       let list1 = document.createElement("li");
       let list2 = document.createElement("li");
       let list3 = document.createElement("li");
@@ -23,11 +25,11 @@ export const Footer = (() => {
       let link7 = document.createElement("a");
       let link8 = document.createElement("a");
 
-      link1.href = "#";
+      link1.href = "index.html";
       link2.href = "#";
       link3.href = "#";
       link4.href = "#";
-      link5.href = "#";
+      link5.href = "Contact-us.html";
       link6.href = "#";
       link7.href = "#";
       link8.href = "#";
@@ -72,10 +74,10 @@ export const Footer = (() => {
     let instagram_icon = document.createElement('a');
     let youtube_icon = document.createElement('a');
 
-    facebook_icon.href = "#";
-    twitter_icon.href = "#";
-    instagram_icon.href = "#";
-    youtube_icon.href = "#";
+    facebook_icon.href = "https://www.facebook.com/";
+    twitter_icon.href = "https://twitter.com/";
+    instagram_icon.href = "https://instagram.com/";
+    youtube_icon.href = "https://youtube.com/";
 
     facebook_icon.classList.add("fa", "fa-facebook");
     twitter_icon.classList.add("fa", "fa-twitter");

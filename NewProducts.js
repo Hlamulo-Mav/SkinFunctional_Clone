@@ -1,6 +1,7 @@
 export const NewProducts = (() => {
     
 let new_products = document.createElement("div");
+new_products.style.fontFamily = "'Encode Sans', sans-serif"
   let product_div = document.createElement("div");
   product_div.style.backgroundColor = "#E0DFED";
   product_div.style.paddingBottom = "50px";
@@ -10,6 +11,8 @@ let new_products = document.createElement("div");
     h2.style.textAlign = "center";
     h2.style.fontSize = "40px";
     h2.style.paddingTop = "30px";
+    h2.style.fontWeight = "50";
+    h2.style.color = "#2C2A2F"
 
     let section = document.createElement("section");
       let figure1 = document.createElement("figure");
