@@ -200,6 +200,7 @@ div2.style.justifyContent = "space-evenly"
     membershipCart.style.paddingTop = "50px"
       let password = document.createElement("li");
       let member = document.createElement("li");
+      member.classList.add("member-btn");
       let cart = document.createElement("li");
 
       let password_link = document.createElement("a");
@@ -218,8 +219,51 @@ div2.style.justifyContent = "space-evenly"
       member.appendChild(member_link);
       cart.appendChild(cart_link);
 
+      let membership_form = document.createElement("form");
+      membership_form.classList.add("member-form")
+        let br = document.createElement("br"); 
+        let member_email = document.createElement("input");
+        member_email.setAttribute("type", "text");
+        member_email.setAttribute("placeholder", "Username");
+        let member_password = document.createElement("input");
+        member_password.setAttribute("placeholder", "Password");
+        member_password.setAttribute("type", "password");
+        let remember = document.createElement("input");
+        remember.setAttribute("type", "checkbox");
+        remember.setAttribute("id", "checkbox");
+        let label = document.createElement("label");
+        label.setAttribute("for", "checkbox");
+        label.textContent = "Remember Me";
+        let submit = document.createElement("input");
+        submit.setAttribute("type", "submit");
+        submit.setAttribute("value", "Login");
+        submit.style.fontSize = "15px"
+        submit.style.border = "none";
+        submit.style.padding = "10px";
+        submit.style.borderRadius = "10px";
+        submit.style.margin = "10px 0px 10px 185px"
+        let register = document.createElement("a");
+        register.textContent = "Sign up";
+        register.style.marginLeft = "190px";
+
+      membership_form.appendChild(member_email);
+      membership_form.appendChild(member_password);
+      membership_form.appendChild(remember);
+      membership_form.appendChild(label);
+      membership_form.appendChild(br.cloneNode());
+      membership_form.appendChild(submit);
+      membership_form.appendChild(br.cloneNode());
+      membership_form.appendChild(register);
+
+
+
+      let member_div = document.createElement("div");
+      member_div.classList.add("member-div");
+      member_div.appendChild(member);
+      member_div.appendChild(membership_form);
+
       membership.appendChild(password);
-      membership.appendChild(member);
+      membership.appendChild(member_div);
       membershipCart.appendChild(cart);
     members.appendChild(membership);
     members.appendChild(membershipCart)

@@ -183,3 +183,44 @@ section figure:hover {
     background-color: #3e8e41;
 }
  
+.member-div {
+    position: relative;
+    display: inline-block;
+  }
+
+.member-form {
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 210px;
+    width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -250px;
+    padding: 20px;
+  }
+
+  .member-div:hover .member-form {
+      display: block;
+    }
+
+.member-form input[type=text], input[type=password] {
+    width: 240px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+   }
+
+   .member-form input[type=submit]:hover {
+       color: #111112;
+       background-color: #A6DBEB;
+   }
+
+   .member-form input[type=submit] {
+    color: white;
+    background-color: #2C2A2F;
+}
