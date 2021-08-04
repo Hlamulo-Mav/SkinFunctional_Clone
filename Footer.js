@@ -103,6 +103,7 @@ export const Footer = (() => {
     copyright.style.textAlign = "center";
     copyright.style.paddingTop = "20px"
     copyright.textContent = "Crystal Clear - All Rights Reserved. 2021";
+    copyright.style.fontSize = "15px"
 
     foot.appendChild(footNav);
     foot.appendChild(socials);
