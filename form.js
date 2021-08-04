@@ -5,6 +5,7 @@ export const form = (() => {
         wrap.style.justifyContent = "space-evenly"
         wrap.style.flexWrap = "wrap";
         wrap.style.margin = "50px 0px"
+        wrap.style.fontFamily = "'Encode Sans', sans-serif";
 
         let div4 = document.createElement("div");
     // Create a break line element
@@ -14,7 +15,8 @@ export const form = (() => {
             form.style.backgroundColor = "#f2f2f2";
             form.style.borderRadius = "5px";
             form.style.padding = "20px";
-            form.style.paddingTop = "100px"
+            form.style.paddingTop = "100px";
+            form.style.fontFamily = "'Encode Sans', sans-serif";
             form.setAttribute("method", "post");
             form.setAttribute("action", "submit.php");
 
@@ -99,6 +101,7 @@ export const form = (() => {
         div5.style.width = "500px";
         let h1 = document.createElement("h1");
         let p1 = document.createElement("p");
+        let p11 = document.createElement("p"); 
         let h2 = document.createElement("h1");
         let p2 = document.createElement("p");
         let h3 = document.createElement("h1");
@@ -107,20 +110,24 @@ export const form = (() => {
         let h5 = document.createElement("h4");
         let p5 = document.createElement("p");
         let p6 = document.createElement("p");
+        let p7 = document.createElement("p");
 
         h1.textContent = "Contact Numbers";
         p1.textContent = "WhatsApp: 076 039 8651";
+        p11.textContent = "Tel: 078 002 1826";
         h2.textContent = "Physical Address";
-        p2.textContent = "Office 3A-1, Broadacres Shopping Centre Cnr Cedar Avenue and Valley Road Broadacres AH Sandton 2191";
+        p2.textContent = "Office 3A-1, Broadacres Shopping Centre, Cnr Cedar Avenue and Valley Road Broadacres, AH Sandton 2191";
         h3.textContent = "Email Us";
         h4.textContent = "Orders";
-        p4.textContent ="orders@skinfunctional.com";
+        p4.textContent ="orders@crystalclear.com"; 
         h5.textContent ="Customer service";
-        p5.textContent = "customerservice@skinfunctional.com";
-        p6.textContent = "Do you have questions about how we can help you Send us an email and we’ll get in touch shortly."
+        p5.textContent = "customerservice@crystalclear.com";
+        p6.textContent = "Do you have questions about how we can help you?"
+        p7.textContent = "Send us an email and we’ll get in touch shortly."
 
         div5.appendChild(h1);
         div5.appendChild(p1);
+        div5.appendChild(p11);
         div5.appendChild(h2);
         div5.appendChild(p2);
         div5.appendChild(h3);
@@ -128,7 +135,9 @@ export const form = (() => {
         div5.appendChild(p4);
         div5.appendChild(h5);
         div5.appendChild(p5);
+        div5.appendChild(br.cloneNode());
         div5.appendChild(p6);
+        div5.appendChild(p7);
 
         wrap.appendChild(form);
         wrap.appendChild(div5);
