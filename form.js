@@ -11,33 +11,47 @@ export const form = (() => {
             let br = document.createElement("br"); 
     // Create a form 
             let form = document.createElement("form");
+            form.style.backgroundColor = "#f2f2f2";
+            form.style.borderRadius = "5px";
+            form.style.padding = "20px";
+            form.style.paddingTop = "100px"
             form.setAttribute("method", "post");
             form.setAttribute("action", "submit.php");
 
     // Create an input element for Fullname
+            let PN = document.createElement("p");
             let FN = document.createElement("input");
             FN.setAttribute("type", "text");
             FN.setAttribute("name", "Full Name");
-            FN.setAttribute("placeholder", "Full Name");
+            FN.setAttribute("placeholder", "Enter your Full Name...");
 
     // Create an input element for  Email Address
+            let PD = document.createElement("p");
             let ID = document.createElement("input");
             ID.setAttribute("type", "text");
             ID.setAttribute("name", "Email Addess");
-            ID.setAttribute("placeholder", "Email Address");
+            ID.setAttribute("placeholder", "Enter Your Email Address...");
 
         // Create an input element for sUBJECT
+            let PB = document.createElement("p");
             let SB = document.createElement("input");
             SB.setAttribute("type", "text");
             SB.setAttribute("name", "Subject");
-            SB.setAttribute("placeholder", "Subject");
+            SB.setAttribute("placeholder", "Subject..");
 
              // Create an input element for Message
+             let PM = document.createElement("p");
              let Msg= document.createElement("input");
              Msg.setAttribute("type", "text");
              Msg.setAttribute("name", "Message");
-             Msg.setAttribute("placeholder", "Message");
-             Msg.style.height = "170px";
+             Msg.setAttribute("placeholder", "Message..");
+             Msg.style.height = "130px";
+
+             PN.textContent = "Full Names";
+             PD.textContent = "Email";
+             PB.textContent = "Subject";
+             PM.textContent = "Message / Enquiry";
+        
 
              //attach captcha image
              
@@ -60,18 +74,22 @@ export const form = (() => {
 
             
     // Append the input to the form
+            form.append(PN);
             form.append(FN);
-            form.appendChild(br.cloneNode());   
+            form.appendChild(br.cloneNode());
+            form.append(PD);   
             form.append(ID);
             form.appendChild(br.cloneNode());
+            form.appendChild(PB);
             form.append(SB); 
-            form.appendChild(br.cloneNode());   
+            form.appendChild(br.cloneNode());
+            form.append(PM);  
             form.append(Msg); 
             form.appendChild(br.cloneNode());
             form.appendChild(image);
             form.appendChild(br.cloneNode());
             form.append(submit); 
-            form.style.paddingTop = "50px";
+            form.style.paddingTop = "40px";
 
             document.getElementsByTagName("body")[0]
             .appendChild(form);
