@@ -53,17 +53,6 @@ export const form = (() => {
              PD.textContent = "Email";
              PB.textContent = "Subject";
              PM.textContent = "Message / Enquiry";
-        
-
-             //attach captcha image
-             
-            /*let image = document.createElement("div")
-            image.style.justifyContent = "space-evenly"
-            let image1 = document.createElement("img")
-            image1.src = "images/captcha.png";
-            image1.setAttribute("id", "cap");
-            image.appendChild(image1); */
-
 
     // Create a submit button
             let submit = document.createElement("input");
