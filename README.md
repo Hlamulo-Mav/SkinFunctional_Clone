@@ -32,9 +32,13 @@ To get a local copy up and running follow these simple example steps.
 - Enter the directory where you cloned or downloaded the project and open index.html file using your favorite browser
 
 ## Screenshots
-
+![Home](https://user-images.githubusercontent.com/74840172/128272251-a660cf63-fc4b-484b-bb34-58187c9ee13b.png)
+![Products](https://user-images.githubusercontent.com/74840172/128272257-b638c6e8-0f8c-4273-8f7d-d3cab104fdfa.png)
+![Map](https://user-images.githubusercontent.com/74840172/128272253-a003d3b3-387b-4032-a998-d2b5d079d7c7.png)
+![Contact](https://user-images.githubusercontent.com/74840172/128272248-9b7cf8d2-7577-4f80-b393-7b669cb450c2.png)
 
 ## Live-Demo
+[Click here to view website](https://rawcdn.githack.com/Hlamulo-Mav/SkinFunctional_Clone/7a286fefff0ea9a21e7f579845a19931d6b24199/index.html)
 
 
 ## Authors
