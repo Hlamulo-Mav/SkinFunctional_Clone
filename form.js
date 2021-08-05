@@ -57,16 +57,13 @@ export const form = (() => {
 
              //attach captcha image
              
-            let image = document.createElement("div")
+            /*let image = document.createElement("div")
             image.style.justifyContent = "space-evenly"
             let image1 = document.createElement("img")
             image1.src = "images/captcha.png";
             image1.setAttribute("id", "cap");
-            image.appendChild(image1); 
+            image.appendChild(image1); */
 
-            /*let capcha= document.createElement("div");
-            capcha.classList.add("g-recaptcha");
-            capcha.style.data-sitekey*/
 
     // Create a submit button
             let submit = document.createElement("input");
@@ -92,7 +89,7 @@ export const form = (() => {
             form.append(PM);  
             form.append(Msg); 
             form.appendChild(br.cloneNode());
-            form.appendChild(image);
+            //form.appendChild(capcha);
             form.appendChild(br.cloneNode());
             form.append(submit); 
             form.style.paddingTop = "40px";
