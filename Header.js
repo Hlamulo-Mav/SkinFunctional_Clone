@@ -225,9 +225,11 @@ div2.style.justifyContent = "space-evenly"
         let member_email = document.createElement("input");
         member_email.setAttribute("type", "text");
         member_email.setAttribute("placeholder", "Username");
+        member_email.setAttribute("required", "true");
         let member_password = document.createElement("input");
         member_password.setAttribute("placeholder", "Password");
         member_password.setAttribute("type", "password");
+        member_password.setAttribute("required", "true");
         let remember = document.createElement("input");
         remember.setAttribute("type", "checkbox");
         remember.setAttribute("id", "checkbox");
