@@ -182,4 +182,36 @@ section figure:hover {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
- 
+
+/*Floating Back-To-Top Button*/
+  
+  .scrollToTopBtn {
+    background-color: #2C2A2F;
+    border: none;
+    border-radius: 20%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 25px;
+    padding: 16px;
+    
+    
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: -5px;
+    right: 70px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all .5s ease
+  }
+  
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0)
+  }

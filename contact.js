@@ -1,7 +1,18 @@
 export const Contact = (() => {
 
     let about = document.createElement("div");
-    about.setAttribute("id", "about")
+    about.setAttribute("id", "about");
+    
+    let Top = document.createElement("div");
+    let button = document.createElement("button");
+    let button_link = document.createElement("a");
+    button_link.href ="#"
+    button_link.classList.add("fa", "fa-chevron-up");
+    button_link.classList.add("scrollToTopBtn");
+    button_link.classList.add("showBtn");
+    button.appendChild(button_link);
+    Top.appendChild(button)
+    document.documentElement.Top = 0;
 
     let div3 = document.createElement("div");
     div3.style.backgroundColor = "#4E5754";
@@ -31,9 +42,12 @@ export const Contact = (() => {
         mapps.style.allowfullscreen = " ";
         mapps.style.loading = "lazy";
         mapp.appendChild(mapps);
+
     
     about.appendChild(div3);
-    about.appendChild(mapp)
+    about.appendChild(mapp);
+    about.appendChild(Top);
+    
      return {about}
 })();
 
