@@ -2,6 +2,7 @@ export const Contact = (() => {
 
     let about = document.createElement("div");
     about.setAttribute("id", "about");
+    about.style.fontFamily = "'Encode Sans', sans-serif"
     
     let Top = document.createElement("div");
     let button = document.createElement("button");
