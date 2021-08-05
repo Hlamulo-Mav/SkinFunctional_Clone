@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 ![Contact](https://user-images.githubusercontent.com/74840172/128272248-9b7cf8d2-7577-4f80-b393-7b669cb450c2.png)
 
 ## Live-Demo
-[Click here to view website](https://raw.githack.com/Hlamulo-Mav/SkinFunctional_Clone/main/Contact-Us.html)
+[Click here to view website](https://raw.githack.com/Hlamulo-Mav/SkinFunctional_Clone/main/index.html)
 
 
 ## Authors
