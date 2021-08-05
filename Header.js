@@ -1,6 +1,6 @@
 
 export const Header = (() => {
-//let container = document.querySelector('#navigation')
+
 let navbar = document.createElement("nav");
 navbar.setAttribute("id", "navigation")
 let div = document.createElement('div');
